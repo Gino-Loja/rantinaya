@@ -1,0 +1,17 @@
+@keyframes appear {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animated-text {
+    display: inline-block; /* Para asegurar que cada letra tenga su propia línea */
+    animation: appear 0.5s ease-out forwards;
+    opacity: 0; /* Comienza con opacidad 0 para la animación de aparición gradual */
+  }
+  
